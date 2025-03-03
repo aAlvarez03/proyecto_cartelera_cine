@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto_Cartelera</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/d56aeaaea6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+    </header>
+    <script src="src/js/header.js"></script>
+
+    <main>
+      <section class="flex justify-center">
+        <!-- Carrusel de imagenes -->
+        <div
+          id="carousel"
+          class="relative w-full max-w-6xl mx-auto overflow-hidden shadow-lg shadow-black-500/50"
+        >
+          <!-- Contenedor de imágenes -->
+          <div
+            class="flex transition-transform duration-300 ease-in-out"
+            id="carouselImages"
+          >
+            <img
+              src="src/images/carrousel/hp1-carrousel.jpg"
+              class="w-full flex-shrink-0"
+              alt="Imagen 1"
+            />
+            <img
+              src="src/images/carrousel/hp2-carrousel.jpg"
+              class="w-full flex-shrink-0"
+              alt="Imagen 2"
+            />
+            <img
+              src="src/images/carrousel/hp3-carrousel.jpg"
+              class="w-full flex-shrink-0"
+              alt="Imagen 3"
+            />
+            <img
+              src="src/images/carrousel/hp7-carrousel.jpg"
+              class="w-full flex-shrink-0"
+              alt="Imagen 4"
+            />
+            <img
+              src="src/images/carrousel/hp7p2-carrousel.jpg"
+              class="w-full flex-shrink-0"
+              alt="Imagen 5"
+            />
+          </div>
+
+          <!-- Botones de navegación -->
+          <button
+            id="prevBtn"
+            class="absolute top-1/2 left-0 transform -translate-y-1/2 h-100 w-25 cursor-pointer hover:scale-150 transition duration-300"
+          >
+            <i class="fa-solid fa-angles-left text-white"></i>
+          </button>
+          <button
+            id="nextBtn"
+            class="absolute top-1/2 right-0 transform -translate-y-1/2 h-100 w-25 cursor-pointer hover:scale-150 transition duration-300"
+          >
+            <i class="fa-solid fa-angles-right text-white"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Sección cartelera de peliculas -->
+      <section class="d-flex flex-column align-items-center my-16 text-center">
+        <span class="text-5xl font-bold mt-4">Peliculas en cartelera</span>
+
+        <div class="bg-white flex justify-center mt-6">
+          <div
+            class="mx-auto max-w-2xl px-4 py-3 sm:px-6 lg:max-w-7xl lg:px-8"
+          >
+            <div
+              class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+            >
+              <div class="group relative bg-gray-50 pb-4 rounded-md">
+                <img
+                  src="src/images/cartelera/hp1-cartelera.jpg"
+                  alt="Front of men&#039;s Basic Tee in black."
+                  class="aspect-square w-full rounded-md bg-gray-200 object-cover lg:object-cover lg:aspect-auto lg:h-100"
+                />
+                <div class="mt-4 flex justify-center">
+                  <div class="flex flex-col items-center">
+                    <span class="text-lg font-semibold">
+                      Harry Potter y la piedra filosofal
+                    </span>
+                    <button
+                      class="my-2 py-1 px-2 bg-blue-500 text-white rounded cursor-pointer hover:bg-blue-300 transition duration-200 hover:scale-105"
+                    >
+                     <a href="peliculas/hp1.html">Comprar</a> 
+                    </button>
+                    <p class="mt-3 text-sm font-bold text-gray-500">Ficción</p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative bg-gray-50 pb-4 rounded-md">
+                <img
+                  src="src/images/cartelera/hp2-cartelera.jpg"
+                  alt="Front of men&#039;s Basic Tee in black."
+                  class="aspect-square w-full rounded-md bg-gray-200 object-cover lg:aspect-auto lg:aspect-auto lg:h-100"
+                />
+                <div class="mt-4 flex justify-center">
+                  <div class="flex flex-col items-center">
+                    <span class="text-lg text-center font-semibold">
+                      Harry Potter y la camara de los secretos
+                    </span>
+                    <button
+                      class="my-2 py-1 px-2 bg-blue-500 text-white rounded cursor-pointer hover:bg-blue-300 transition duration-200 hover:scale-105"
+                    >
+                     <a href="peliculas/hp2.html">Comprar</a> 
+                    </button>
+                    <p class="mt-3 text-sm font-bold text-gray-500">Ficción</p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative bg-gray-50 pb-4 rounded-md">
+                <img
+                  src="src/images/cartelera/hp3-cartelera.jpg"
+                  alt="Harry Potter 3 img"
+                  class="aspect-square w-full rounded-md bg-gray-200 object-cover lg:aspect-auto lg:aspect-auto lg:h-100"
+                />
+                <div class="mt-4 flex justify-center">
+                  <div class="flex flex-col items-center">
+                    <span class="text-lg text-center font-semibold">
+                      Harry Potter y el prisionero de Azkaban
+                    </span>
+                    <button
+                      class="my-2 py-1 px-2 bg-blue-500 text-white rounded cursor-pointer hover:bg-blue-300 transition duration-200 hover:scale-105"
+                    >
+                    <a href="peliculas/hp3.html">Comprar</a> 
+                    </button>
+                    <p class="mt-3 text-sm font-bold text-gray-500">Ficción</p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative bg-gray-50 pb-4 rounded-md">
+                <img
+                  src="src/images/cartelera/hp4-cartelera.jpg"
+                  alt="Front of men&#039;s Basic Tee in black."
+                  class="aspect-square w-full rounded-md bg-gray-200 object-cover lg:aspect-auto lg:aspect-auto lg:h-100"
+                />
+                <div class="mt-4 flex justify-center">
+                  <div class="flex flex-col items-center">
+                    <span class="text-lg text-center font-semibold">
+                      Harry Potter y el caliz de fuego
+                    </span>
+                    <button
+                      class="my-2 py-1 px-2 bg-blue-500 text-white rounded cursor-pointer hover:bg-blue-300 transition duration-200 hover:scale-105"
+                    >
+                    <a href="peliculas/hp4.html">Comprar</a> 
+                    </button>
+                    <p class="mt-3 text-sm font-bold text-gray-500">Ficción</p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative bg-gray-50 pb-4 rounded-md">
+                <img
+                  src="src/images/cartelera/hp5-cartelera.jpg"
+                  alt="Front of men&#039;s Basic Tee in black."
+                  class="aspect-square w-full rounded-md bg-gray-200 object-cover lg:aspect-auto lg:aspect-auto lg:h-100"
+                />
+                <div class="mt-4 flex justify-center">
+                  <div class="flex flex-col items-center">
+                    <span class="text-lg text-center font-semibold">
+                      Harry Potter y la orden del fenix
+                    </span>
+                    <button
+                      class="my-2 py-1 px-2 bg-blue-500 text-white rounded cursor-pointer hover:bg-blue-300 transition duration-200 hover:scale-105"
+                    >
+                    <a href="peliculas/hp5.html">Comprar</a> 
+                    </button>
+                    <p class="mt-3 text-sm font-bold text-gray-500">Ficción</p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative bg-gray-50 pb-4 rounded-md">
+                <img
+                  src="src/images/cartelera/hp6-cartelera.jpg"
+                  alt="Front of men&#039;s Basic Tee in black."
+                  class="aspect-square w-full rounded-md bg-gray-200 object-cover lg:aspect-auto lg:aspect-auto lg:h-100"
+                />
+                <div class="mt-4 flex justify-center">
+                  <div class="flex flex-col items-center">
+                    <span class="text-lg text-center font-semibold">
+                      Harry Potter y el principe mestizo
+                    </span>
+                    <button
+                      class="my-2 py-1 px-2 bg-blue-500 text-white rounded cursor-pointer hover:bg-blue-300 transition duration-200 hover:scale-105"
+                    >
+                    <a href="peliculas/hp6.html">Comprar</a> 
+                    </button>
+                    <p class="mt-3 text-sm font-bold text-gray-500">Ficción</p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative bg-gray-50 pb-4 rounded-md">
+                <img
+                  src="src/images/cartelera/hp7p1-cartelera.jpg"
+                  alt="Front of men&#039;s Basic Tee in black."
+                  class="aspect-square w-full rounded-md bg-gray-200 object-cover lg:aspect-auto lg:aspect-auto lg:h-100"
+                />
+                <div class="mt-4 flex justify-center">
+                  <div class="flex flex-col items-center">
+                    <span class="text-lg text-center font-semibold">
+                      Harry Potter y las reliquias de la muerte - Parte 1
+                    </span>
+                    <button
+                      class="my-2 py-1 px-2 bg-blue-500 text-white rounded cursor-pointer hover:bg-blue-300 transition duration-200 hover:scale-105"
+                    >
+                    <a href="peliculas/hp7p1.html">Comprar</a> 
+                    </button>
+                    <p class="mt-3 text-sm font-bold text-gray-500">Ficción</p>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative bg-gray-50 pb-4 rounded-md">
+                <img
+                  src="src/images/cartelera/hp7p2-cartelera.jpg"
+                  alt="Front of men&#039;s Basic Tee in black."
+                  class="aspect-square w-full rounded-md bg-gray-200 object-cover lg:aspect-auto lg:aspect-auto lg:h-100"
+                />
+                <div class="mt-4 flex justify-center">
+                  <div class="flex flex-col items-center">
+                    <span class="text-lg text-center font-semibold">
+                      Harry Potter y las reliquias de la muerte - Parte 2
+                    </span>
+                    <button
+                      class="my-2 py-1 px-2 bg-blue-500 text-white rounded cursor-pointer hover:bg-blue-300 transition duration-200 hover:scale-105"
+                    >
+                    <a href="peliculas/hp7p2.html">Comprar</a> 
+                    </button>
+                    <p class="mt-3 text-sm font-bold text-gray-500">Ficción</p>
+                  </div>
+                </div>
+              </div>
+              <!-- More products... -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="src/js/index.js"></script>
+    <footer>
+    </footer>
+    <script src="src/js/footer.js"></script>
+  </body>
+</html>
