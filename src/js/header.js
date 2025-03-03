@@ -75,6 +75,8 @@ header.innerHTML = `
               >Login</a
             >
             <a href="${window.location.pathname !== 'registro.html' ? '../registro.html' : '#'}" class="text-lg font-semibold text-gray-900 hover:bg-blue-500 hover:text-white p-1 rounded transition delay-50 ${window.location.pathname === '/registro.html' ? 'bg-blue-500 text-white' : ''}">Registro</a>
+
+            <a href="${window.location.pathname !== 'usuario.html' ? '../usuario.html' : '#'}" class="text-xl mx-2 font-semibold text-gray-900 hover:bg-blue-500 hover:text-white p-1 rounded transition delay-50 ${window.location.pathname === '/usuario.html' ? 'bg-blue-500 text-white' : ''}"><i class="fa-solid fa-circle-user"></i></a>
           </div>
         </nav>
         <!-- Mobile menu, show/hide based on menu open state. -->
@@ -129,8 +131,14 @@ header.innerHTML = `
                     class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                     >Salas</a
                   >
+                  
                 </div>
                 <div class="py-6">
+                  <a
+                    href="${window.location.pathname !== 'usuario.html' ? '../usuario.html' : '#'}"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    >Perfil</a
+                  >
                   <a
                     href="${window.location.pathname !== 'login.html' ? '../login.html' : '#'}"
                     class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"

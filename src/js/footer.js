@@ -1,19 +1,27 @@
 const footer = document.querySelector('footer');
 
 footer.innerHTML = `
-    <div class="bg-gray-800 text-white text-center py-6 px-6 grid grid-row-2 gap-y-10 lg:grid-rows-1 lg:grid-cols-3">
-            <div class="sm: lg:col-span-2">
-                <p>© Proyecto hecho por <span class="font-bold text-lg">Alvarez Alejandro Nicolas</span></p>
-                <p>Todos los derechos reservados.</p>
-            </div>
-            <div class="grid grid-row-1 grid-cols-5 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-4 lg:grid-row-1 lg:grid-cols-5 lg:gap-y-0 lg:items-center lg:col-start-4">
-                <a href="#" class="text-xl"><i class="fa-brands fa-facebook p-1 hover:bg-blue-300 rounded-md transition delay-25"></i></a>
-                <a href="#" class="text-xl"><i class="fa-brands fa-x-twitter p-1 hover:bg-blue-300 rounded-md transition delay-25"></i></a>
-                <a href="#" class="text-xl"><i class="fa-brands fa-instagram p-1 hover:bg-blue-300 rounded-md transition delay-25"></i></a>
-                <div class="grid col-span-2 grid-cols-2 sm:col-start-1 sm:row-start-2 sm:col-span-3 lg:grid-row-1 lg:col-start-4 lg:row-start-1 lg:place-items-stretch">
-                    <a href="#" class="text-xl"><i class="fa-brands fa-github p-1 hover:bg-blue-300 rounded-md transition delay-25"></i></a>
-                    <a href="#" class="text-xl"><i class="fa-brands fa-youtube p-1 hover:bg-blue-300 rounded-md transition delay-25"></i></a>
-                </div>
-            </div>
-        </div>
+    <footer class="bg-white shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 dark:bg-gray-800 antialiased">
+  <p class="mb-4 text-sm text-center text-gray-500 dark:text-gray-400 sm:mb-0">
+      &copy; 2025 <a href="/index.html" class="hover:underline" target="_blank">Cines Alvarez</a>. Todos los derechos reservados.
+  </p>
+  <div class="flex justify-center items-center space-x-1">
+    <a href="#" data-tooltip-target="tooltip-facebook" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600">
+        <i class="fa-brands fa-facebook"></i>
+        <span class="sr-only">Facebook</span>
+    </a>
+    <a href="#" data-tooltip-target="tooltip-twitter" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600">
+        <i class="fa-brands fa-x-twitter"></i>
+        <span class="sr-only">Twitter</span>
+    </a>
+    <a href="#" data-tooltip-target="tooltip-github" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600">
+        <i class="fa-brands fa-github"></i>
+        <span class="sr-only">Github</span>
+    </a>
+    <a href="#" data-tooltip-target="tooltip-dribbble" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600">
+        <i class="fa-brands fa-instagram"></i>
+        <span class="sr-only">Instagram</span>
+    </a>
+</div>
+</footer>
 `;
